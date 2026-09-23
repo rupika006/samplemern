@@ -4,7 +4,7 @@ let hrroutes = require('./routes/hr_routes');
 let emproutes=require('./routes/emp_routes');
 let app = express();
 //connect with out mongodb hrmanagement database
-mongoose.connect("mongodb://localhost:27017/samplemern").then(
+mongoose.connect("mongodb://localhost:27017/hrmanagement").then(
     ()=>console.log("Database connected successfully")
 ).catch((err)=>console.log(err));
 app.use("/api/hr",hrroutes);
